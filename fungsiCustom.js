@@ -19,7 +19,7 @@ let modifyFile3 = (val) => {
 
 // TODO: Kerjakan bacaData
 // gunakan variabel file1, file2, dan file3
-const bacaData = (arg) => {
+const bacaData = (fnCallback) => {
   const result = [];
   fs.readFile(file1, 'utf8', function read(err, data) {
     if (err) fnCallback(err,null);
