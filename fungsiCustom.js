@@ -36,6 +36,7 @@ const bacaData = (fnCallback) => {
         parsedData = JSON.parse(data)
         message = parsedData[0].data.message;
         result.push(message.split(' ')[1])
+        fnCallback(null,result);
       })
     })
   })
